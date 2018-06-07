@@ -2,9 +2,9 @@ var express = require('express');
 var app = express();
 var https = require('https');
 
-var statesRouter = require('./states-router');
-var citiesRouter = require('./cities-router');
-var neighborhoodsRouter = require('./neighborhoods-router');
+var statesRouter = require('./router/states-router');
+var citiesRouter = require('./router/cities-router');
+var neighborhoodsRouter = require('./router/neighborhoods-router');
 
 
 var server = app.listen(8081, function () {
